@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>列表</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="http:////at.alicdn.com/t/font_837003_1vult55g963.css">
+</head>
+
+<body>
+
+  <style>
+    .wrap {
+      display: flex;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      overflow-y: hidden;
+    }
+
+    .header {
+      width: 100%;
+      height: 390px;
+      background-color: #a8b6b8;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-start;
+    }
+
+    .header .ico-nav {
+      display: flex;
+      align-self: flex-start;
+      width: 100%;
+      justify-content: space-between;
+      height: 100px;
+      line-height: 100px;
+    }
+
+    .ico-nav .ico-nav__item {
+      font-size: 30px !important;
+      color: #ffffff;
+    }
+
+    .ico-nav .ico-nav__item:first-child {
+      margin-left: 30px;
+    }
+
+    .ico-nav .ico-nav__item:last-child {
+      margin-right: 30px;
+    }
+
+    .dot-box {
+      align-self: flex-end;
+      width: 100%;
+      text-align: center;
+      height: 70px;
+      line-height: 70px;
+    }
+
+    .dot-box__dot {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #ffffff;
+    }
+
+    .banner {
+      width: 100%;
+      align-self: center;
+    }
+
+    .banner span {
+      display: block;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+      line-height: 90px;
+      font-size: 20px;
+      background-color: #ffffff;
+      margin: 0 auto;
+      color: #999999;
+      text-align: center;
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .main {
+      width: 100%;
+      align-self: center;
+      height: 100%;
+      overflow-y: scroll;
+    }
+
+    .main__inner {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .list-box {
+      height: 180px;
+    }
+
+    .list-box__title {
+      color: #c2c3c6;
+      height: 80px;
+      line-height: 80px;
+    }
+
+    .list-box__body {
+      height: 100px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .list-box__body__item {
+      height: 100px;
+      background-color: #a8b6b8;
+      width: 30%;
+    }
+
+    .footer {
+      width: 100%;
+      height: 200px;
+      line-height: 200px;
+      align-self: flex-end;
+      display: flex;
+    }
+
+    .music-box {
+      width: 100%;
+      height: 55px;
+      line-height: 55px;
+      align-self: center;
+    }
+
+    .music-box__inner {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .music-box__info {
+      display: flex;
+      flex-flow: nowrap;
+    }
+
+    .music-box__content {
+      display: flex;
+      flex-flow: column;
+    }
+
+    .music-box__pic {
+      border-radius: 50%;
+      height: 55px;
+      width: 55px;
+      background-color: #a8b6b8;
+    }
+
+    /* .music-box__title {}
+
+    .musci-box__desc {} */
+
+    .music-box__opera {
+      width: 120px;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .music-box__opera i {
+      font-size: 30px;
+      color: #a8b6b8;
+    }
+  </style>
+
+  <div class="wrap">
+    <div class="header">
+      <div class="ico-nav">
+        <i class="ico-nav__item iconfont icon-552cc1e587668"></i>
+        <i class="ico-nav__item iconfont icon-gecihaibaozitishezhijuzuo"></i>
+      </div>
+
+      <div class="banner">
+        <span>echoes</span>
+      </div>
+
+      <div class="dot-box">
+        <span class="dot-box__dot"></span>
+        <span class="dot-box__dot"></span>
+        <span class="dot-box__dot"></span>
+        <span class="dot-box__dot"></span>
+      </div>
+    </div>
+
+    <div class="main">
+      <div class="main__inner">
+        <div class="list-box">
+          <div class="list-box__title">Hot album</div>
+          <div class="list-box__body">
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+          </div>
+        </div>
+        <div class="list-box">
+          <div class="list-box__title">Hot album</div>
+          <div class="list-box__body">
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+          </div>
+        </div>
+        <div class="list-box">
+          <div class="list-box__title">Hot album</div>
+          <div class="list-box__body">
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+          </div>
+        </div>
+        <div class="list-box">
+          <div class="list-box__title">Hot album</div>
+          <div class="list-box__body">
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+          </div>
+        </div>
+        <div class="list-box">
+          <div class="list-box__title">Hot album</div>
+          <div class="list-box__body">
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+            <div class="list-box__body__item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="music-box">
+        <div class="music-box__inner">
+          <div class="music-box__info">
+            <div class="music-box__pic"></div>
+            <!-- <div class="music-box__content">
+              <p class="music-box__title">My Love</p>
+              <p class="musci-box__desc">West</p>
+            </div> -->
+          </div>
+          <div class="music-box__opera">
+            <i class="iconfont icon-zanting"></i>
+            <i class="iconfont icon-xiayishou"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

@@ -7,51 +7,13 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>列表</title>
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/global.css">
   <link rel="stylesheet" href="http:////at.alicdn.com/t/font_837003_1vult55g963.css">
 </head>
 
 <body>
 
   <style>
-    .wrap {
-      display: flex;
-      height: 100vh;
-      width: 100%;
-      flex-direction: column;
-      overflow-y: hidden;
-    }
-
-    .header {
-      width: 100%;
-      height: 390px;
-      background-color: #a8b6b8;
-      display: flex;
-      flex-direction: column;
-      align-self: flex-start;
-    }
-
-    .header .ico-nav {
-      display: flex;
-      align-self: flex-start;
-      width: 100%;
-      justify-content: space-between;
-      height: 100px;
-      line-height: 100px;
-    }
-
-    .ico-nav .ico-nav__item {
-      font-size: 30px !important;
-      color: #ffffff;
-    }
-
-    .ico-nav .ico-nav__item:first-child {
-      margin-left: 30px;
-    }
-
-    .ico-nav .ico-nav__item:last-child {
-      margin-right: 30px;
-    }
-
     .dot-box {
       align-self: flex-end;
       width: 100%;
@@ -62,10 +24,15 @@
 
     .dot-box__dot {
       display: inline-block;
-      width: 10px;
-      height: 10px;
+      width: 15px;
+      height: 15px;
       border-radius: 50%;
       background-color: #ffffff;
+      box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .dot-box__dot:hover {
+      background-color: #666666;
     }
 
     .banner {
@@ -85,13 +52,6 @@
       color: #999999;
       text-align: center;
       box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
-    }
-
-    .main {
-      width: 100%;
-      align-self: center;
-      height: 100%;
-      overflow-y: scroll;
     }
 
     .main__inner {
@@ -119,14 +79,6 @@
       height: 100px;
       background-color: #a8b6b8;
       width: 30%;
-    }
-
-    .footer {
-      width: 100%;
-      height: 100px;
-      /* line-height: 200px; */
-      align-self: flex-end;
-      display: flex;
     }
 
     .music-box {

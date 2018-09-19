@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>播放</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/global.css">
+  <link rel="stylesheet" href="http://at.alicdn.com/t/font_837003_fgll4wyc0y5.css">
+</head>
+
+<body>
+
+
+  <style>
+    .header {
+      height: 800px;
+      background-color: #ffffff;
+    }
+
+    .ico-nav .ico-nav__item {
+      font-size: 30px !important;
+      color: #a8b6b8;
+    }
+
+    .banner {
+      width: 100%;
+      align-self: center;
+    }
+
+    .banner span {
+      display: block;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      line-height: 150px;
+      font-size: 20px;
+      background-color: #a8b6b8;
+      margin: 0 auto;
+      color: #ffffff;
+      text-align: center;
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+    }
+
+    .play-box {
+      display: flex;
+      justify-content: space-between;
+      height: 20px;
+      line-height: 20px;
+      margin-top: 50px !important;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    .play-bar {
+      background-color: #ffffff;
+      width: 70%;
+      height: 20px;
+      display: table;
+    }
+
+    .play-bar__inner {
+      /* background-color: #dae3e4; */
+      /* width: 100%; */
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .play-bar__now {
+      width: 40%;
+      height: 2px;
+      background-color: #a8b6b8;
+    }
+
+    .opear-box {
+      height: 35px;
+      line-height: 35px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .opear-box i {
+      font-size: 20px;
+      color: #a8b6b8;
+    }
+
+    .info-box {
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .info-box__title {
+      font-size: 30px;
+      height: 30px;
+      line-height: 30px;
+      color: #a8b6b8;
+    }
+
+    .info-box__author {
+      font-size: 12px;
+      height: 12px;
+      line-height: 12px;
+      color: #a8b6b8;
+      margin-top: 40px;
+    }
+
+    .info-box__title,
+    .info-box__author {
+      text-align: center;
+    }
+  </style>
+
+  <div class="wrap">
+    <div class="header">
+      <div class="ico-nav">
+        <i class="ico-nav__item iconfont icon-xia"></i>
+        <i class="ico-nav__item iconfont icon-gecihaibaozitishezhijuzuo"></i>
+      </div>
+
+      <div class="banner">
+        <span>echoes</span>
+      </div>
+
+      <div class="play-box">
+        <div class="play-bar__curr">0:24</div>
+        <div class="play-bar">
+          <div class="play-bar__inner">
+            <div class="play-bar__now"></div>
+          </div>
+        </div>
+        <div class="play-bar__total">3:48</div>
+      </div>
+
+    </div>
+
+    <div class="main">
+
+      <div class="main__inner">
+
+        <div class="info-box">
+          <div class="info-box__title">
+            My Love
+          </div>
+          <div class="info-box__author">
+            West
+          </div>
+          <div class="info-box__author">
+            West
+          </div>
+          <div class="info-box__author">
+            West
+          </div>
+          <div class="info-box__author">
+            West
+          </div>
+          <div class="info-box__author">
+            West
+          </div>
+          <div class="info-box__author">
+            West
+          </div>
+          <div class="info-box__author">
+            West
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="opear-box">
+        <i class="ico-nav__item iconfont icon-xunhuan"></i>
+        <i class="ico-nav__item iconfont icon-next"></i>
+        <i class="ico-nav__item iconfont icon-zanting"></i>
+        <i class="ico-nav__item iconfont icon-xiayishou1"></i>
+        <i class="ico-nav__item iconfont icon-shoucang"></i>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
